@@ -1,0 +1,130 @@
+CRITICAL - 2023-05-31 02:10:36 --> Undefined property: App\Controllers\FilmIndonesia::$Film
+in APPPATH\Controllers\FilmIndonesia.php on line 24.
+ 1 APPPATH\Controllers\FilmIndonesia.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FilmIndonesia::$Film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\FilmIndonesia.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FilmIndonesia->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FilmIndonesia))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 02:15:23 --> Undefined property: App\Controllers\FilmIndonesia::$Film
+in APPPATH\Controllers\FilmIndonesia.php on line 24.
+ 1 APPPATH\Controllers\FilmIndonesia.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FilmIndonesia::$Film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\FilmIndonesia.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FilmIndonesia->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FilmIndonesia))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 02:16:42 --> Undefined property: App\Controllers\FilmIndonesia::$Film
+in APPPATH\Controllers\FilmIndonesia.php on line 24.
+ 1 APPPATH\Controllers\FilmIndonesia.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FilmIndonesia::$Film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\FilmIndonesia.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FilmIndonesia->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FilmIndonesia))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 02:17:52 --> Call to a member function getFilm() on null
+in APPPATH\Controllers\FilmIndonesia.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FilmIndonesia->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FilmIndonesia))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 02:55:18 --> Class "App\Models\FilmModel" not found
+in APPPATH\Controllers\Film.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Film->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 02:57:07 --> Cannot declare class App\Controllers\Film, because the name is already in use
+in APPPATH\Models\FilmModel.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-31 03:18:24 --> Undefined property: App\Controllers\Film::$film
+in APPPATH\Controllers\Film.php on line 24.
+ 1 APPPATH\Controllers\Film.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Film::$film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\Film.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:18:49 --> Undefined property: App\Controllers\Film::$film
+in APPPATH\Controllers\Film.php on line 24.
+ 1 APPPATH\Controllers\Film.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Film::$film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\Film.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:18:51 --> Undefined property: App\Controllers\Film::$film
+in APPPATH\Controllers\Film.php on line 24.
+ 1 APPPATH\Controllers\Film.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Film::$film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\Film.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:22:22 --> syntax error, unexpected variable "$data", expecting ")"
+in APPPATH\Controllers\Film.php on line 25.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('Film')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('Film')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Film')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:25:04 --> Undefined property: App\Controllers\Film::$film
+in APPPATH\Controllers\Film.php on line 24.
+ 1 APPPATH\Controllers\Film.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Film::$film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\Film.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:25:30 --> Undefined property: App\Controllers\Film::$film
+in APPPATH\Controllers\Film.php on line 24.
+ 1 APPPATH\Controllers\Film.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Film::$film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\Film.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:25:31 --> Undefined property: App\Controllers\Film::$film
+in APPPATH\Controllers\Film.php on line 24.
+ 1 APPPATH\Controllers\Film.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Film::$film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\Film.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:26:37 --> Undefined property: App\Controllers\Film::$film
+in APPPATH\Controllers\Film.php on line 24.
+ 1 APPPATH\Controllers\Film.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Film::$film', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Controllers\\Film.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:28:50 --> Undefined array key "duration"
+in APPPATH\Views\film\index.php on line 23.
+ 1 APPPATH\Views\film\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "duration"', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 5 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-05-31 03:29:21 --> Undefined array key "duratin"
+in APPPATH\Views\film\index.php on line 23.
+ 1 APPPATH\Views\film\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "duratin"', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 5 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')

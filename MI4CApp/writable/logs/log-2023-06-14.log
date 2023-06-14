@@ -1,0 +1,670 @@
+CRITICAL - 2023-06-14 00:05:23 --> Invalid file: "genre/semuagenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('genre/semuagenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(28): view('genre/semuagenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 00:05:24 --> Invalid file: "genre/semuagenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('genre/semuagenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(28): view('genre/semuagenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 00:09:53 --> Invalid file: "genre/semuagenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('genre/semuagenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(28): view('genre/semuagenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 00:42:56 --> mysqli_sql_exception: Unknown column 'film.id_genre' in 'on clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `film`.*...', 0)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `film`.*...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `film`.*...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `film`.*...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\app\Models\FilmModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\app\Controllers\Film.php(30): App\Models\FilmModel->getAllDataJoin()
+#6 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Film->All()
+#7 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-14 00:42:56 --> Unknown column 'film.id_genre' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `film`.*, `genre`.`nama_genre`
+FROM `film`
+JOIN `genre` ON `genre`.`id` = `film`.`id_genre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `film`.*, `genre`.`nama_genre`
+FROM `film`
+JOIN `genre` ON `genre`.`id` = `film`.`id_genre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `film`.*, `genre`.`nama_genre`
+FROM `film`
+JOIN `genre` ON `genre`.`id` = `film`.`id_genre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `film`.*, `genre`.`nama_genre`
+FROM `film`
+JOIN `genre` ON `genre`.`id` = `film`.`id_genre`', [], false)
+ 5 APPPATH\Models\FilmModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Film.php(30): App\Models\FilmModel->getAllDataJoin()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->All()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 00:43:13 --> Invalid file: "genre/semuagenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('genre/semuagenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(28): view('genre/semuagenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:21:52 --> Invalid file: "Genre/semuagenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Genre/semuagenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Genre/semuagenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(30): view('Genre/semuagenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:22:48 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\genremodel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:22:48 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\genremodel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:24:00 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\genremodel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:24:00 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\genremodel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:24:02 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\genremodel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:24:02 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\genremodel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:24:02 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\genremodel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:24:02 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\genremodel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:27:34 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:27:34 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:27:35 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:27:35 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:27:36 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:27:36 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:27:36 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:27:36 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:27:36 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:27:36 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:27:36 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:27:36 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+ERROR - 2023-06-14 01:27:37 --> mysqli_sql_exception: Unknown column 'id_Genre' in 'where clause' in C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\MI4CApp\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', NULL)
+#1 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\MI4CApp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\MI4CApp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\MI4CApp\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MI4CApp\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\MI4CApp\app\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\MI4CApp\app\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+#8 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+#9 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 C:\xampp\htdocs\MI4CApp\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MI4CApp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MI4CApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-14 01:27:37 --> Unknown column 'id_Genre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'', null)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = \'Horor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Genre`
+WHERE `id_Genre` = :id_Genre:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\GenreModel.php(52): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Genre.php(37): App\Models\GenreModel->getDataBy('Horor')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->Genre_by_nama_Genre()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:28:18 --> Invalid file: "Genre/SemuaGenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Genre/SemuaGenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Genre/SemuaGenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(30): view('Genre/SemuaGenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:32:59 --> Invalid file: "Genre/Genre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Genre/Genre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Genre/Genre', [], true)
+ 3 APPPATH\Controllers\Genre.php(30): view('Genre/Genre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:34:00 --> Invalid file: "Genre/SemuaGenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Genre/SemuaGenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Genre/SemuaGenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(30): view('Genre/SemuaGenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:34:17 --> Invalid file: "Genre/SemuaGenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Genre/SemuaGenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Genre/SemuaGenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(30): view('Genre/SemuaGenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:34:18 --> Invalid file: "Genre/SemuaGenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Genre/SemuaGenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Genre/SemuaGenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(30): view('Genre/SemuaGenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:41:36 --> Invalid file: "Genre/SemuaGenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Genre/SemuaGenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Genre/SemuaGenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(30): view('Genre/SemuaGenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:41:37 --> Invalid file: "Genre/SemuaGenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Genre/SemuaGenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Genre/SemuaGenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(30): view('Genre/SemuaGenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:48:52 --> Invalid file: "semuagenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('semuagenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('semuagenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(28): view('semuagenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:54:50 --> Invalid file: "semuagenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('semuagenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('semuagenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(28): view('semuagenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 01:55:49 --> Invalid file: "semuagenre.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('semuagenre.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('semuagenre', [], true)
+ 3 APPPATH\Controllers\Genre.php(28): view('semuagenre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 03:55:26 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\film\index.php on line 61.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 3 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 03:57:25 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\film\index.php on line 60.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 3 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 03:59:08 --> Undefined variable $i
+in APPPATH\Views\film\index.php on line 52.
+ 1 APPPATH\Views\film\index.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 5 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 04:00:39 --> Undefined variable $i
+in APPPATH\Views\film\index.php on line 52.
+ 1 APPPATH\Views\film\index.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 5 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 04:01:11 --> Undefined variable $i
+in APPPATH\Views\film\index.php on line 52.
+ 1 APPPATH\Views\film\index.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 5 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
