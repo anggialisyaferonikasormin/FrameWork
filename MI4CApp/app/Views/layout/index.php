@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,23 +9,22 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark text-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">LK21</a>
+    <a class="navbar-brand" href="#">LK99</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Beranda</a>
-        </li>
+          <a class="nav-link active" aria-current="page" href="/">Beranda</a></li>
         <li class="nav-item">
           <a class="nav-link" href="/film">Semua Film</a>
-          </li>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="/genre">Kategori Film</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"href="/tentang">Tentang Kami</a>
+          <a class="nav-link" href="/tentang">Tentang Kami</a>
         </li>
       </ul>
     </div>
@@ -34,31 +32,9 @@
 </nav>
 
 <div class="container">
-<div class="row">
-    <div class="col-md-12">
-        <table class="table table-hover">
-        
-            <tr>
-                <th>NO</th>
-                <th>Nama Genre</th>
-
-            </tr>
-            <?php $i = 1; ?>
-            <?php foreach($semuagenre as $genre): ?>
-                <tr>
-                <td><?= $i++; ?></td>
-                <td><?= $genre ["nama_genre"] ?> </td>
-                <td>
-                <a href="#" class="btn btn-success">Update</a>
-                <a href="#" class="btn btn-delete">Delete</a></td>
-                </tr>
-            <?php endforeach; ?>
-        </table>
-    </div>
+  <?= $this->renderSection('cover')?>
 </div>
-
-</div>
-
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>
