@@ -10,9 +10,16 @@ class GenreModel extends Model
     protected $primarykey       ='id';
     protected $useAutoIncrement =true;
     protected $allowFields      = [];
+    public function getGenre()
+    {
+
+    }
 
       public function getAllData()
       {
         return $this->findAll();
+      }
+      public function genre($data){
+        return $this->where("genre", $data)->findAllData();
       }
     }

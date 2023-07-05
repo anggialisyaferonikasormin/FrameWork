@@ -4,54 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data film</title>
+    <title>LK99</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark text-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">LK 99</a>
+    <a class="navbar-brand" href="#">LK99</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          <a class="nav-link active" aria-current="page" href="/">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/semuafilm">Semua film</a>
+          <a class="nav-link" href="/film">Semua Film</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kategori film</a>
+          <a class="nav-link" href="/genre">Kategori Film</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Tentang film</a>
+          <a class="nav-link" href="/about">Tentang Kami</a>
         </li>
       </ul>
     </div>
   </div>
-</nav>
-<div class="container">
-  <h1>Data Film</h1>
+  </nav>
 
-    <div class="row">
-        <?php foreach ($data_film as $film) : ?>
-        <div class="col-md-3">
-        <div class="card">
-            <img src="/assets/cover/<?= $film["cover"] ?>" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title"><?= $film["nama_film"] ?></h5>
-                <p class="card-text"><?= $film["id_genre"] ?> || <?= $film["duration"] ?></p>
-                <a href="#" class="btn btn-info">Detail</a>
-                <a href="#" class="btn btn-success">Update</a>
-                <a href="#" class="btn btn-warning">Delete</a>
-            </div>
-        </div> 
+<div class="container">
+<div class="row">
+        <div class="col-md-6">
+          <h1>Semua Film</h1>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="film/add" class="btn btn-primary">Tambah Data</a>
+        </div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-hover">
+        
+            <tr>
+                <th>NO</th>
+                <th>Nama Film</th>
+                <th>Cover</th>
+                <th>Genre</th>
+                <th>Duration</th>
+                <th>Action</th>
+            </tr>
+            <?php $i = 1; ?>
+            <?php foreach($data_film as $film): ?>
+                <tr>
+                <td><?= $i++; ?></td>
+                <td><?= $film ["nama_film"] ?> </td>
+                <td><img style="width:50%; height:100px;" src="/assets/cover/<?= $film["cover"] ?>" class="card-img-top" alt="..." ></td>
+                <td><?= $film ["nama_genre"] ?> </td>
+                <td><?= $film ["duration"] ?> </td>
+                <td>
+                <td>
+                  <a href="/film/update/<?= $film["id"]; ?>" class="btn btn-success">Update</class>
+                  <a href="" class="btn btn-danger">Delete</class>
+                </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
     </div>
-    <?php endforeach; ?>
 </div>
-    <script src="/assets/js/bootstrap.min.js"></script>
+
+</div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

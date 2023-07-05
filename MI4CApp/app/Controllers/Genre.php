@@ -19,7 +19,7 @@ class Genre extends BaseController
 
     public function index()
     {
-        $data['data_genre'] =$this->genre->getGenre();
+        $data['data_genre'] =$this->genre->getAllData();
         return view("film/index", $data);
     }
     public function all(){

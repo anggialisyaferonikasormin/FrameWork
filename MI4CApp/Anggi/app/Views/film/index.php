@@ -53,25 +53,44 @@
                 <th>Duration</th>
                 <th>Action</th>
             </tr>
-            <?php $i = 1; ?>
-            <?php foreach($data_film as $film): ?>
+            <?php $i =1;
+                 foreach($data_film as $film) :?>
                 <tr>
-                <td><?= $i++; ?></td>
-                <td><?= $film ["nama_film"] ?> </td>
-                <td><img style="width:50%; height:150px;" src="/assets/cover/<?= $film["cover"] ?>" class="card-img-top" alt="..." ></td>
-                <td><?= $film ["nama_genre"] ?> </td>
-                <td><?= $film ["duration"] ?> </td>
-                <td>
-                <a href="#" class="btn btn-success">Update</a><a href="#" class="btn btn-delete">Delete</a>
-                </td>
+                    <td><?= $i++; ?></td>
+                    <td><?= $film['nama_film']?></td>
+                    <td><img style="width: 50px;" src="/assets/cover/<?= $film["cover"]?>" class="card-img-top"></td>
+                    <td><?= $film['nama_genre']?></td>
+                    <td><?= $film['duration']?></td>
+                    <td>
+                    <a href="/film/update/<?= encryptUrl($film["id"]); ?>" class="btn btn-success">Update</a>
+                    <a class="btn btn-danger" onclick="return confirmDelete()">Delete</a>
+                    </td>
                 </tr>
             <?php endforeach; ?>
-        </table>
+            </table>
+            </div>
+        </div>
     </div>
-</div>
+    <!-- tambahkan dari sini  -->
+    <script>
+    function confirmDelete() {
+        swal({
+                title: "Apakah Anda yakin?",
+                text: "setelah dihapus! data anda akan benar-benar hilang!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
 
-</div>
+                    window.location.href = "/film/destroy/<?= encryptUrl($film['id']) ?>";
 
-    <script src="assets/js/bootstrap.min.js"></script>
-</body>
-</html>
+                } else {
+                    swal("Data tidak jadi dihapus!");
+                }
+            });
+    }
+    </script>
+    <!-- sampai sini -->
+    <?= $this->endSection() ?>

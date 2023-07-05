@@ -33,10 +33,15 @@
 </nav>
 
 <div class="container">
-  <?= $this->renderSection('cover')?>
-</div>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <?php if (session()->getFlashdata('success')) : ?>
+    <?= $this->renderSection('content') ?>
+        <footer class="row row-cols-5 py-5 my-5 border-top">
+            <div class="container text-center">Copyright &copy<?=Date('Y')?> araaskzy
+            </div>
+        </footer>
+    </div>
+
+<script src="assets/js/bootstrap.min.js" ></script>
+<?php if (session()->getFlashdata('success')) : ?>
         <script>
             swal({
                 title: "Informasi",
@@ -48,5 +53,3 @@
 
     <?php endif; ?>
 </body>
-
-</html>
