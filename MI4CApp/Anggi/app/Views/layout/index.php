@@ -35,7 +35,7 @@
 <div class="container">
     <?= $this->renderSection('content') ?>
         <footer class="row row-cols-5 py-5 my-5 border-top">
-            <div class="container text-center">Copyright &copy<?=Date('Y')?> araaskzy
+            <div class="container text-center">Copyright &copy<?=Date('Y')?> alisya.s
             </div>
         </footer>
     </div>

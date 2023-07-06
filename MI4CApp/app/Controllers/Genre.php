@@ -3,28 +3,49 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-//Step 1
+
+//1
 use App\Models\GenreModel;
 
 class Genre extends BaseController
 {
-    //Step 2
-    protected $genre;
-    //Step 3
+    //2
+    protected $Genre;                                                                                        
+    //3 fungsi constract
     public function __construct()
     {
-      //Step 4
-      $this->genre = new GenreModel();
+        //4 melakukan inisiasi di class Genre
+        $this->Genre = new GenreModel();
     }
 
     public function index()
     {
-        $data['data_genre'] =$this->genre->getAllData();
-        return view("film/index", $data);
+        //5
+        $data['data_Genre'] = $this->Genre->getGenre();
+        return view("Genre/index", $data);
     }
+
     public function all(){
-    
-        $data['semuagenre'] =$this->genre->getAllData();
-        return view("film/semuagenre", $data);
+        $data['SemuaGenre'] = $this->Genre->getAllData();
+        return view("Genre/SemuaGenre", $data);
     }
+
+    public function Genre_by_id(){
+        dd($this->Genre->getDataByID(1));
+    }
+
+    public function Genre_by_nama_Genre(){
+        dd($this->Genre->getDataBy("Horor"));
+    }
+
+    public function Genre_order(){
+        dd($this->Genre->getOrderBy());
+    }
+
+    public function Genre_limit_five(){
+        dd($this->Genre->getlimit());
+    }
+
+
+
 }
